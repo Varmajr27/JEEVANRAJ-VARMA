@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CGPA Dean's List Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Semester Dean's List Eligibility Results</h1>
+
+    <div class="container">
+        <!-- Form to input data -->
+        <form id="student-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required><br>
+
+            <label for="credit-hours">Credit Hours:</label>
+            <input type="number" id="credit-hours" placeholder="Enter credit hours" step="1" min="0" required><br>
+
+            <label for="current-gpa">Current GPA:</label>
+            <input type="number" id="current-gpa" placeholder="Enter current GPA" step="0.01" min="0" max="4.00" required><br>
+
+            <button type="button" id="check-eligibility-btn">Check Eligibility & Add</button>
+        </form>
+
+        <!-- Section to display the results -->
+        <div class="output-box">
+            <h2>Section 03 Result</h2>
+            <div id="student-results"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
